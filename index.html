@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Hannah Lassey Bootstrap Portfolio</title>
 </head>
 <body>
     <!-- Navigation bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   
+    <nav class="navbar navbar-expand-lg bg-body-tertiary customnNav">
         <div class="container-fluid">
-        
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -22,65 +22,66 @@
               <a class="nav-link" href="#skills">Skills</a>
               <a class="nav-link" href="#aboutme">About Me </a>
               <a class="nav-link" href="#contactme">Contact Me</a>
-        
+      
             </div>
           </div>
-        </div>
+      </nav>
       </nav>
 
         <!-- Jumotron-->
-        <div class="mt-4 p-5 bg-primary text-white rounded">
+    
+        <div class="mt-4 p-5 bg-primary text-white rounded hero">
             <h1>Hannah Lassey Portfolio</h1>
             <p>Here is my current portfolio that demonstrates the projects and skills I have acquired during the EdEX skills bootcamp in front end web development. </p>
           </div>
-
+    
      <!-- Work Section with Bootstrap Cards-->
      <section class="work" id="work">
      <h2>Work</h2>
-     <div class="card mb-3">
+     <div class="main-image">
+       <div class="card mb-3 mainproject">
         <img src="images/CSSCS.jpg" class="card-img-top" alt="image of CSS cheatsheet">
         <div class="card-body">
-          <h5 class="card-title">CSS Cheatsheet</h5>
+          <a href = "https://hannahlas.github.io/CSSCheatSheet/"><h5 class="card-title">CSS Cheatsheet</h5></a>
           <p class="card-text">For this project I created a CSS Cheatsheet to enable me to easily copy code when writing CSS code. I used Flexbox to create the cards.</p>
           <p class="card-text"><small class="text-body-secondary">Completed November 2023</small></p>
         </div>
       </div>
-     <div class="card-group">
-        <div class="card">
-          <img src="images/02-portfolio-1.jpg" class="card-img-top" alt="dummy picture of a project">
+    </div>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="images/02-portfolio-3.jpg" class="card-img-top" alt="dummy picture of project">
           <div class="card-body">
             <h5 class="card-title">Project 1 </h5>
             <p class="card-text">Here I will write about Project 1.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Coming soon...</small>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <img src="images/02-portfolio-4.jpg" class="card-img-top" alt="dummy picture of project">
-          <div class="card-body">
-            <h5 class="card-title">Project 2 </h5>
-            <p class="card-text">Here I will write about Project 2.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Coming soon...</small>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/02-portfolio-3.jpg" class="card-img-top" alt="dummy picture of project">
-          <div class="card-body">
-            <h5 class="card-title">Project 3 </h5>
-            <p class="card-text">Here I will write about Project 3.</p>
-          </div>
-          <div class="card-footer">
-            <small class="text-body-secondary">Coming soon...</small>
+        <div class="col">
+          <div class="card">
+            <img src="images/02-portfolio-1.jpg" class="card-img-top" alt="dummy picture of a project">
+            <div class="card-body">
+              <h5 class="card-title">Project 2 </h5>
+              <p class="card-text">Here I will write about Project 2.</p>
+            </div>
           </div>
         </div>
-      </div>
+        <div class="col">
+          <div class="card">
+            <img src="images/02-portfolio-4.jpg" class="card-img-top" alt="dummy picture of project">
+            <div class="card-body">
+              <h5 class="card-title">Project 3 </h5>
+              <p class="card-text">Here I will write about Project 3.</p>
+            </div>
+          </div>
+        </div>
 </section>
        <!-- Skills-->
-       <section class="skills" id="skills">
-       <h2>Skills</h2>
+      
+       <section class="skills" id="skills"> 
+        <h2>Skills</h2>
        <div class="container text-center">
         <div class="row">
           <div class="col">
@@ -90,28 +91,35 @@
             <h4>CSS</h4><p>Adept at CSS, I excel in designing visually appealing and responsive user interfaces. My expertise encompasses styling elements, implementing layouts, and ensuring cross-browser compatibility, resulting in seamless and engaging user experiences</p>
           </div>
           <div class="col">
-            <h4>JavaScript</h4><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo recusandae ex sequi. Voluptate obcaecati porro laborum animi nobis facilis? Sequi iste ullam magnam assumenda ipsam nam nostrum, laboriosam aperiam consequuntur.</p>
+            <h4>JavaScript</h4><p>In the next two weeks I will be learning all avout JavaScript. I will learn aout arrays and functions along with much more! </p>
           </div>
         </div>
       </div>
 </section>
+
         <!-- About Me-->
         <section class="aboutme" id="aboutme">
         <div class = "AboutMe">
         <h2>About Me</h2>
         <img src="images/menew.jpg" alt="picture of Hannah Lassey">
         <p>
-            As a dedicated learner currently immersed in the edX Skills Bootcamp, I am passionate about mastering the latest technologies in web development. My journey involves honing skills in HTML, CSS, and JavaScript to create dynamic, responsive, and visually captivating websites. Stay tuned for my evolving portfolio showcasing innovation and creativity.</p>
+            As a dedicated learner currently immersed in the edX Skills Bootcamp, I am passionate about mastering the latest technologies in web development. My journey involves honing skills in HTML, CSS, and JavaScript to create dynamic, responsive, and visually captivating websites. Stay tuned for my evolving portfolio showcasing innovation and creativity.
+          </p>
+          <div class="button-container">
             <a href="#" class="btn btn-primary">My CV</a>
+          </div>
          </div> 
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
+     <!-- Contact Me-->
     <footer class="contactme" id="contactme">
-        <div class="d-grid gap-2 d-md-block">
+         <div class="d-grid gap-2 d-md-block">
             <button class="btn btn-primary" type="button">LinkedIn</button>
             <button class="btn btn-primary" type="button">E-mail</button>
             <button class="btn btn-primary" type="button">Twitter</button>
           </div>
+         
     </footer>
 </html>
