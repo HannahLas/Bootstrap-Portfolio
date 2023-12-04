@@ -1,7 +1,9 @@
+/*Navigation Styling */
 .customnNav {
   background-color: slategray!important;
 }
 
+/*Jumbotron styling */
 .hero {
     background: url("../images/background.jpg")!important;
     background-size: cover;
@@ -16,6 +18,7 @@
    font-weight: bold;
   }
 
+  /*Work Styling */
   .main-image {
     padding: 50px 200px 50px 200px;
   }
@@ -29,6 +32,11 @@
   .container text-center {
     padding:100px;
   }
+  .col {
+    padding: 5px 20px;
+  }
+
+  /*About Me Styling */
   .aboutme img {
     width:200px;
     height:200px;
@@ -40,11 +48,6 @@
     float:left;
   }
 
-  
-
-  .col {
-    padding: 5px 20px;
-  }
   footer {
     margin-top: 100px;
     margin-bottom: 50px;
@@ -57,7 +60,7 @@
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5)!important;
   }
 
-  /*Ask about this */
+  /*Responsive styling */
   @media (max-width: 768px)  {
     .button-container {
     display:flex;
